@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+
+
+.container{
+  min-height: 100vh;
+  padding-bottom: 50px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#navbar{
+   
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right:25px;
+  font-weight: bold;
+  display:flex;
+  justify-content:flex-end;
+   
+  }
+
+
+.navbar-list{
+  display:flex-end;
+}
+
+.navbar-list a {
+  display: block;
+  font-size:20px;
+  
+}
+
+.navbar-list a:hover{
+  background-color:darkblue;
+  
+}
+
+
+#navbar ul{
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  opacity:0.7;
+  width: 100%;
+  
+}
+
+#navbar li{
+  float: right;
+}
+
+#navbar li a{
+  text-align: center;
+  text-decoration: none;
+  color:  white;
+  font-style: bold;
+  padding: 3vh 16vh;
+  display: block;
+  
+}
+
+.introduction{
+  background-image: url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+     
+ }
+
+#welcome-section{
+  height: 100vh;
+  width: 100%;
+  padding-top:30vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+#welcome-section h1{
+  text-transform: normal;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-bottom: -7px;
+  margin-top:-120px;
+  font-weight: bolder;
+  font-size: 55px;
+  opacity:8;
+  
+  
+  
+}
+
+#welcome-section p{
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: italic;
+  text-align: center;
+  display: block;
+  
+} 
+
+.work{
+  background: darkblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  border: 1px solid;
+ 
+  width: 100%;
+  margin: 0 auto;
+  min-height: 1000px;
+  
+  
+}
+
+.work .work-header {
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+  max-width: 640px;
+  margin: 25px auto 25px auto;
+  padding:25px;
+  font-size:34px;
+    display:block;
+
+}
+
+.project {
+  display:inline-block;
+  float:left;
+  
+  
+  text-decoration: none;
+  border: none;
+  height: 337px;
+  width: 337px;
+  margin: 35px 35px ;
+  align-content:center;
+  
+  
+}
+
+.project-title{
+  font-weight: bold;
+  color:white;
+  font-size:15px;
+  padding:20px;
+  background-color:black;
+}
+.project-picture{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width:  337px;
+  height: 337px;
+  
+  display: inline-block;
+  float:left;
+  
+   
+  
+ 
+ 
+}
+
+.project-tile{
+  font-weight: bold;
+  color: black;
+}
+
+.show-all{
+  
+  
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  background-color: black;
+  cursor: pointer;
+  margin: 15px 15px;
+  
+  align-items: center;
+  margin-top:10px;
+  margin-left:-1010px;
+  margin-bottom:auto;
+}
+
+
+
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 180vh;
+  
+  background: black;
+  
+}
+
+
+.contact-header h1{
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: -490px;
+  font-size:50px;
+  padding: 70px;
+  
+}
+
+
+.contact-point{
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  align-content: center;
+  color:whitesmoke;
+  
+  
+  text-align: center;
+  
+  cursor: pointer;
+  justify-content:center;
+  align-items: center;
+  width: 40px;
+  height: 100px;
+  line-height: 100px;
+  position: center;
+  float: left;
+  margin: 20px 45px 0px 20px;
+  
+  
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: -390px;
+  flex-wrap: wrap;
+  font-size:50px;
+  
+}
+
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+    
+  }
+  .contact-header h1{
+    font-size:25px;
+  }
+
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ padding: 25px;
+ height: 250px;
+ margin-top:115px;
+ background-color: midnightblue;
+ color: white;
+ 
+}
+footer a{
+  color: whitesmoke;
+}
